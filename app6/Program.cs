@@ -7,43 +7,94 @@
             //part1
 
             //Q1
+            //            using System;
+
+            //class PersonClass
+            //        {
+            //            public string Name;
+            //        }
+
+            //        struct PersonStruct
+            //        {
+            //            public string Name;
+            //        }
+
+            //        class Program
+            //        {
+            //            static void Main()
+            //            {
+            //                // Class Example
+            //                PersonClass p1 = new PersonClass();
+            //                p1.Name = "Mariam";
+
+            //                PersonClass p2 = p1;
+            //                p2.Name = "Ahmed";
+
+            //                Console.WriteLine("Class Output: " + p1.Name);
+            //                // Ahmed → لأنه Reference Type
+
+            //                // Struct Example
+            //                PersonStruct s1;
+            //                s1.Name = "Mariam";
+
+            //                PersonStruct s2 = s1;
+            //                s2.Name = "Ahmed";
+
+            //                Console.WriteLine("Struct Output: " + s1.Name);
+            //                // Mariam → لأنه Value Type
+            //            }
+            //        }
+
+
+
+
+
+
+
+
+            //Q2
+
+
 //            using System;
 
-//class PersonClass
+//class Student
 //        {
-//            public string Name;
-//        }
+//            public string Name;        // Accessible anywhere
+//            private int Age;           // Hidden
 
-//        struct PersonStruct
-//        {
-//            public string Name;
+//            public void SetAge(int age)
+//            {
+//                Age = age;
+//            }
+
+//            public void ShowData()
+//            {
+//                Console.WriteLine("Name: " + Name);
+//                Console.WriteLine("Age: " + Age);
+//            }
 //        }
 
 //        class Program
 //        {
 //            static void Main()
 //            {
-//                // Class Example
-//                PersonClass p1 = new PersonClass();
-//                p1.Name = "Mariam";
+//                Student s = new Student();
+//                s.Name = "Mariam";     // allowed
 
-//                PersonClass p2 = p1;
-//                p2.Name = "Ahmed";
+//                // s.Age = 20; ❌ Error لأنه private
 
-//                Console.WriteLine("Class Output: " + p1.Name);
-//                // Ahmed → لأنه Reference Type
-
-//                // Struct Example
-//                PersonStruct s1;
-//                s1.Name = "Mariam";
-
-//                PersonStruct s2 = s1;
-//                s2.Name = "Ahmed";
-
-//                Console.WriteLine("Struct Output: " + s1.Name);
-//                // Mariam → لأنه Value Type
+//                s.SetAge(20);
+//                s.ShowData();
 //            }
 //        }
+
+
+
+
+
+
+
+
 
     }
 }
